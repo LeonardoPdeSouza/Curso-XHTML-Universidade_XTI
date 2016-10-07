@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Formulário Controles</title>
+    </head>
+    <body>
+        <form action="Formulario_Controles.html" method="get">
+            Nome: <input type="text" id="nome" /> <br />
+            Senha: <input type="password" id="senha" /> <br />
+            Sexo: <br />
+            <input type="radio" name="sexo" value="M" /> Masculino <br />
+            <input type="radio" name="sexo" value="F" /> Feminino<br />
+            Conhecimentos: <br />
+            <input type="checkbox" name="conhecimento" value="Java" /> Java <br />
+            <input type="checkbox" name="conhecimento" value="Java" /> HTML <br />
+            <input type="checkbox" name="conhecimento" value="Java" /> CSS <br />
+            <input type="checkbox" name="conhecimento" value="Java" /> XSLT <br />
+            
+            Curriculo<br />
+            <input type="file" id="curriculo" /> <br />
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Limpar" />
+            <input type="button" value="Botão" />
+            
+            País: <br />
+            <select id="pais">
+                <option value="BR">Brasil</option>
+                <option>China</option>
+                <option>EUA</option>
+                <option>Japão</option>
+                <option>Argentina</option>
+            </select>
+            <br />
+            Resumo: <br />
+            <textarea cols="60" rows="6">EScreva seu texto</textarea>
+            <br />
+            Editores ou Navegadores: <br />
+            <select id="en">
+                <optgroup label="Editores">
+                    <option>Noteped++</option>
+                    <option>DreanWeaver</option>
+                    <option>Eclipse</option>
+                    <option>HTML-Kit</option>
+                </optgroup>
+                <optgroup label="Navegadores">
+                    <option>Firefox</option>
+                    <option>IE</option>
+                    <option>Safari</option>
+                    <option>Opera</option>
+                </optgroup>
+            </select>
+            
+        </form>
+    </body>
+</html>

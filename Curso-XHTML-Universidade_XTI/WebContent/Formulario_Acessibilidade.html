@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Formulário Acessibilidade</title>
+    </head>
+    <body>
+        <form action="Formulario_Controles.html" method="get">
+            
+            <input type="hidden" id="chave" value="123"/>
+            <fieldset> 
+                <legend>Informações Pessoais</legend>
+                
+                <label for="readonly"> Readonly:</label>
+                <input type="text" id="readonly" value="Readonly" readonly="readonly"/> <br />
+                
+                <label for="disabled"> Disabled:</label>
+                <input type="text" id="disabled" value="Disabled" disabled="disabled"/> <br />
+            
+                <label for="nome" tabindex="15" accesskey="N" > Nome:</label>
+            <input type="text" id="nome" /> <br />
+            
+            Sexo: <br />
+            <input type="radio" name="sexo" value="M" tabindex="13" /> Masculino <br />
+            <input type="radio" name="sexo" value="F" tabindex="12" /> Feminino<br />
+            
+            <label for="senha"> Senha: 
+                <input type="password" id="senha"  tabindex="11" /> <br />
+            </label>
+            
+            </fieldset>
+            <fieldset>
+                <legend>Informações Profissional</legend>
+            Conhecimentos: <br />
+            <input type="checkbox" name="conhecimento" value="Java" tabindex="7" /> Java <br />
+            <input type="checkbox" name="conhecimento" value="Java" tabindex="8" /> HTML <br />
+            <input type="checkbox" name="conhecimento" value="Java" tabindex="9" /> CSS <br />
+            <input type="checkbox" name="conhecimento" value="Java" tabindex="10" /> XSLT <br />
+
+            Curriculo<br />
+            <input type="file" id="curriculo" tabindex="3" /> <br />
+            <input type="submit" value="Enviar" tabindex="4" />
+            <input type="reset" value="Limpar" tabindex="5" />
+            <input type="button" value="Botão" tabindex="6"/>
+            <br />
+            Resumo: <br />
+            <textarea cols="60" rows="6" tabindex="3">EScreva seu texto</textarea>
+            </fieldset>
+            <br />
+
+            País: <br />
+            <select id="pais" tabindex="2">
+                <option value="BR">Brasil</option>
+                <option>China</option>
+                <option>EUA</option>
+                <option>Japão</option>
+                <option>Argentina</option>
+            </select>
+            <br />
+            
+            Editores ou Navegadores: <br />
+            <select id="en" tabindex="1">
+                <optgroup label="Editores">
+                    <option>Noteped++</option>
+                    <option>DreanWeaver</option>
+                    <option>Eclipse</option>
+                    <option>HTML-Kit</option>
+                </optgroup>
+                <optgroup label="Navegadores">
+                    <option>Firefox</option>
+                    <option>IE</option>
+                    <option>Safari</option>
+                    <option>Opera</option>
+                </optgroup>
+            </select>
+
+        </form>
+    </body>
+</html>
